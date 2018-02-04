@@ -12,8 +12,9 @@ before_script:
 
 script:
     - docker build -t ${image} .
-    - docker run -d -p 127.0.0.1:5000:8000 ${image}
-    - curl -v 127.0.0.1:5000
+    - docker run -d -p 127.0.0.1:8000:8000 ${image}
+    - netstat -vanp tcp | grep 8000
+    - curl -v 127.0.0.1:8000
 
 after_script:
   - docker images
