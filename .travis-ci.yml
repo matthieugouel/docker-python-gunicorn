@@ -1,0 +1,19 @@
+sudo: required
+
+language: bash
+services: docker
+
+branches:
+  only:
+    - "master"
+
+before_script:
+    - image="python-gunicorn:latest"
+
+script:
+    - docker build -t ${image} .
+    - docker run -p 127.0.0.1:8000:8000 ${image} &
+    - curl localhost:8000
+
+after_script:
+  - docker images
