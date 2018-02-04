@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/MatthieuGouel/docker-python-gunicorn.svg?branch=master)](https://travis-ci.org/MatthieuGouel/docker-python-gunicorn)
 [![Docker Build Status](https://img.shields.io/docker/build/matthieugouel/python-gunicorn.svg)](https://hub.docker.com/r/matthieugouel/python-gunicorn)
 [![Docker Automated build](https://img.shields.io/docker/automated/matthieugouel/python-gunicorn.svg)](https://github.com/MatthieuGouel/docker-python-gunicorn)
-[![license](https://img.shields.io/github/license/MatthieuGouel/docker-python-gunicorn.svg)](https://github.com/MatthieuGouel/docker-python-gunicorn)
+[![license](https://img.shields.io/github/license/MatthieuGouel/docker-python-gunicorn.svg)](https://github.com/MatthieuGouel/docker-python-gunicorn/blob/master/LICENSE)
 
 This image contains Gunicorn on top of the latest Python image.
 It's mainly used for API development purposes.
