@@ -13,7 +13,7 @@ before_script:
 script:
     - docker build -t ${image} .
     - docker run -d -p 127.0.0.1:8000:8000 ${image}
-    - curl 127.0.0.1:8000
+    - curl 0.0.0.0:8000
 
 after_script:
   - docker images
