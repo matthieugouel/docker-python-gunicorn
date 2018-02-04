@@ -1,6 +1,9 @@
 FROM python:latest
 MAINTAINER Matthieu Gouel
 
+# Environment setting
+ENV APP_ENVIRONMENT staging
+
 # Flask demo application
 COPY ./app /app
 RUN pip install -r /app/requirements.txt
@@ -10,9 +13,6 @@ RUN pip install gunicorn gevent
 
 # Gunicorn default configuration
 COPY gunicorn.config.py /app/gunicorn.config.py
-
-# Environment setting
-ENV APP_ENVIRONMENT staging
 
 WORKDIR /app
 
