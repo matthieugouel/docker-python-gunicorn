@@ -1,6 +1,6 @@
 # Docker Image : python-gunicorn
 
-[![Docker Build Status](https://img.shields.io/docker/build/matthieugouel/python-gunicorn.svg)](https://travis-ci.org/MatthieuGouel/docker-python-gunicorn)
+[![Build Status](https://travis-ci.org/MatthieuGouel/docker-python-gunicorn.svg?branch=master)](https://travis-ci.org/MatthieuGouel/docker-python-gunicorn)
 [![Docker Automated build](https://img.shields.io/docker/automated/matthieugouel/python-gunicorn.svg)](https://github.com/MatthieuGouel/docker-python-gunicorn)
 
 This image contains Gunicorn on top of the latest Python image.
