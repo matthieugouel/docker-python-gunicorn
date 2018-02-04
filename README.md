@@ -14,7 +14,7 @@ Note : There is no Nginx in there. So static files are not managed.
 By default, the entry point of your application must be named as **run.py**. Moreover, the instance in that file must be called **app**.
 Also, by default the worker class used is Gevent.
 
-You can change that behaviour running the container with a custom command (here only the name of the application has changed):
+You can change that behavior running the container with a custom command (here only the name of the application has changed):
 
 ```
 docker run -ti -p 127.0.0.1:8000:8000 local_api gunicorn wsgi:app -c /app/gunicorn.config.py
