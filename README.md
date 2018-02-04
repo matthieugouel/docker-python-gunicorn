@@ -28,7 +28,7 @@ Here is an example of a Dockerfile using that image :
 
 ```
 FROM matthieugouel/python-gunicorn:latest
-MAINTAINER Matthieu Gouel
+MAINTAINER Matthieu Gouel <matthieu.gouel@gmail.com>
 
 # Copy the application
 COPY . /app

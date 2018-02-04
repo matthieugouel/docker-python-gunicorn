@@ -1,5 +1,5 @@
 FROM python:latest
-MAINTAINER Matthieu Gouel
+MAINTAINER Matthieu Gouel <matthieu.gouel@gmail.com>
 
 # Environment setting
 ENV APP_ENVIRONMENT staging
