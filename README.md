@@ -29,14 +29,10 @@ Here is an example of a Dockerfile using that image :
 
 ```
 FROM matthieugouel/python-gunicorn:latest
-MAINTAINER Matthieu Gouel <matthieu.gouel@gmail.com>
+LABEL maintainer="Matthieu Gouel <matthieu.gouel@gmail.com>"
 
-# Copy the application
-COPY . /app
-
-# Install application requirements
-RUN pip install -U pip
-RUN pip install -r /app/requirements.txt
+COPY ./app /app
+RUN pipenv install --system --deploy --ignore-pipfile
 ```
 
 There is also a Flask demo application in the *app* folder of this repository.

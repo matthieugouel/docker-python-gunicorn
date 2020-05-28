@@ -1,7 +1,9 @@
 """Minimal flask application."""
 from flask import Flask, jsonify
+
 app = Flask(__name__)
 
-@app.route('/')
+
+@app.route("/")
 def hello_world():
     return jsonify({"Hello": "World"})
